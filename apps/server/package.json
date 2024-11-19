@@ -1,0 +1,23 @@
+{
+  "name": "@zealthy/server",
+  "exports": {
+    ".": "./src/types.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "build": "tsc",
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.4.1",
+    "drizzle-orm": "^0.36.3",
+    "hono": "^4.6.10",
+    "lodash": "^4.17.21",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/lodash": "^4.17.13",
+    "drizzle-kit": "^0.28.1"
+  }
+}
